@@ -12,8 +12,6 @@ This project demonstrates how a relational, topologically informed perspective o
 - data/ — Example CSV format for result data  
 - results/ — Example plots (E₁s vs Z)  
 - predictions.md — Three falsifiable predictions with short measurement protocols  
-- OUTREACH.md — Templates for outreach and short descriptions  
-- requirements.txt — Dependencies for local reproduction
 
 ## Quick start (short)
 1. Clone the repository.  
