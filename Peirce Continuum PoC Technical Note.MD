@@ -1,6 +1,6 @@
 # Peirce Continuum PoC — Technical Note
 
-**Authors:** [Your Name]  
+**Authors:** KI / Drifting  
 **Version:** v0.1.0  
 **Date:** 2026-03-29
 
