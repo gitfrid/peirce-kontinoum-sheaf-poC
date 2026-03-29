@@ -1,7 +1,8 @@
 # Peirce Continuum PoC — Relational Sheaf Algebra as an operational model for spectroscopy and overcriticality
 
 **Short pitch**  
-Peirce’s Continuum interprets measurement outcomes as local sections of relational sheaves. This PoC presents reproducible numerical examples for K‑shell binding energies in two nucleus models, provides three precise, falsifiable predictions, and supplies minimal code that allows experimental groups and numerical researchers to quickly check whether the proposed signatures appear in real data.
+Peirce’s “continuum” idea: continuity is about relations, not points. 
+It interprets measurement outcomes as local sections of relational sheaves. This PoC presents reproducible numerical examples for K‑shell binding energies in two nucleus models, provides three precise, falsifiable predictions, and supplies minimal code that allows experimental groups and numerical researchers to quickly check whether the proposed signatures appear in real data.
 
 ## Objective
 This project demonstrates how a relational, topologically informed perspective on spectroscopy and overcriticality can be computed and tested in practice. It documents initial numerical findings and provides reproducible tools to experimentally test the proposed signatures.
