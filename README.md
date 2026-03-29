@@ -1,42 +1,42 @@
-# Peirce Continuum PoC — Relational Sheaf Algebra als operationales Modell für Spektroskopie und Überkritikalität
+# Peirce Continuum PoC — Relational Sheaf Algebra as an operational model for spectroscopy and overcriticality
 
-Kurzpitch  
-Peirces Kontinuum interpretiert Messwerte als lokale Sektionen relationaler Garben. Dieses PoC zeigt reproduzierbare numerische Beispiele für K‑Schalenbindungsenergien in zwei Kernmodellen, liefert drei präzise, falsifizierbare Vorhersagen und stellt minimalen Code bereit, mit dem experimentelle Gruppen und Numeriker schnell prüfen können, ob die vorgeschlagenen Signaturen in realen Daten auftreten.
+**Short pitch**  
+Peirce’s Continuum interprets measurement outcomes as local sections of relational sheaves. This PoC presents reproducible numerical examples for K‑shell binding energies in two nucleus models, provides three precise, falsifiable predictions, and supplies minimal code that allows experimental groups and numerical researchers to quickly check whether the proposed signatures appear in real data.
 
-## Zielsetzung
-Dieses Projekt zeigt, wie eine relationale, topologisch geprägte Sichtweise auf Spektroskopie und Überkritikalität konkret gerechnet und geprüft werden kann. Es dokumentiert erste numerische Befunde und liefert reproduzierbare Werkzeuge, um die vorgeschlagenen Signaturen experimentell zu testen.
+## Objective
+This project demonstrates how a relational, topologically informed perspective on spectroscopy and overcriticality can be computed and tested in practice. It documents initial numerical findings and provides reproducible tools to experimentally test the proposed signatures.
 
-## Inhalt des Repos
-- src/dirac_radial_solver.py — Minimaler radialer Dirac‑Solver (1s, κ = −1) mit zwei Kernmodellen: punkt‑reguliert und homogene Kugel  
-- notebooks/PoC.ipynb — Demo‑Notebook zur schnellen Visualisierung der Ergebnisse  
-- data/ — Beispiel‑CSV‑Format für Ergebnisdaten  
-- results/ — Beispielplots (E₁s vs Z)  
-- predictions.md — Drei falsifizierbare Vorhersagen mit kurzen Messprotokollen  
-- OUTREACH.md — Vorlagen für Kontaktaufnahme und kurze Beschreibungen  
-- requirements.txt — Abhängigkeiten für lokale Reproduktion
+## Repository contents
+- src/dirac_radial_solver.py — Minimal radial Dirac solver (1s, κ = −1) with two nucleus models: point‑regularized and homogeneous sphere  
+- notebooks/PoC.ipynb — Demo notebook for quick visualization of results  
+- data/ — Example CSV format for result data  
+- results/ — Example plots (E₁s vs Z)  
+- predictions.md — Three falsifiable predictions with short measurement protocols  
+- OUTREACH.md — Templates for outreach and short descriptions  
+- requirements.txt — Dependencies for local reproduction
 
-## Schnellstart (kurz)
-1. Repository klonen.  
-2. Abhängigkeiten installieren mit: pip install -r requirements.txt  
-3. Minimalen Sweep ausführen mit: python src/dirac_radial_solver.py --model sphere --R_fm 5.0 --Z_max 200  
-4. Ergebnisse: CSVs in data/ und Plot in results/E1s_vs_Z.png. Öffne notebooks/PoC.ipynb für interaktive Auswertung.
+## Quick start (short)
+1. Clone the repository.  
+2. Install dependencies with: pip install -r requirements.txt  
+3. Run a minimal sweep with: python src/dirac_radial_solver.py --model sphere --R_fm 5.0 --Z_max 200  
+4. Results: CSV files in data/ and the plot in results/E1s_vs_Z.png. Open notebooks/PoC.ipynb for interactive analysis.
 
-## Kernergebnisse dieses PoC
-- Punktkern (numerisch reguliert) reproduziert die formale Erscheinung bei Z ≈ 137.  
-- Homogene Kugel mit R = 5 fm zeigt kein Eintauchen des 1s‑Zustands bis Z = 200; die kritische Ladung ist modellabhängig und liegt deutlich über 137.  
-- Vakuumpolarisation (Uehling‑Term) wirkt stabilisierend und verschiebt die kritische Ladung weiter nach oben.
+## Core results of this PoC
+- The point nucleus (numerically regularized) reproduces the formal appearance at **Z ≈ 137**.  
+- A homogeneous sphere with R = 5 fm shows no diving of the 1s state up to **Z = 200**; the critical charge is model dependent and lies well above 137.  
+- Vacuum polarization (Uehling term) acts stabilizing and shifts the critical charge further upward.
 
-## Drei prägnante Vorhersagen (Kurzfassung)
-1. K‑Schalen‑Residuum — Systematische Abweichung von Dirac‑Fock‑Werten für K‑Schalen bei Z ≳ 150; erwartete Größenordnung 10–200 eV.  
-2. Positronen‑Zeitprofil — Bei temporär überkritischen Schwerionenkollisionen charakteristische Positronen‑Zeitprofile und Sum‑Energy‑Peaks.  
-3. Skalenproportionale Residuen — Nicht‑eliminierbare, skalenproportionale Residuen in Präzisionsfits über verschiedene Z‑Skalen, korrelierbar mit numerisch berechneter Kohomologie.  
-Details zu Messprotokollen und Signaturtests stehen in predictions.md.
+## Three concise predictions (summary)
+1. **K‑shell residual** — Systematic deviation from Dirac‑Fock values for K‑shell energies at Z ≳ 150; expected magnitude 10–200 eV.  
+2. **Positron time profile** — For temporarily overcritical heavy‑ion collisions, characteristic positron time profiles and sum‑energy peaks are expected.  
+3. **Scale‑proportional residuals** — Non‑eliminable, scale‑proportional residuals in precision fits across different Z scales, correlatable with numerically computed cohomology.  
+Details on measurement protocols and signature tests are in predictions.md.
 
-## Reproduzierbarkeit und Erweiterungsmöglichkeiten
-- Das Minimalskript ist bewusst einfach gehalten; Erweiterungen vorgesehen: Uehling‑Potential (Vakuumpolarisation), Dirac‑Fock‑Screening, feinere Z‑Auflösung, alternative Kernmodelle (z. B. Fermi‑Verteilung).  
-- Konvergenztests und numerische Hinweise sind im Notebook dokumentiert; die Skripte sind so strukturiert, dass Anpassungen schnell möglich sind.
+## Reproducibility and extension possibilities
+- The minimal script is intentionally simple; planned extensions include the Uehling potential (vacuum polarization), Dirac‑Fock screening, finer Z resolution, and alternative nucleus models (e.g., Fermi distribution).  
+- Convergence tests and numerical notes are documented in the notebook; the scripts are structured so that adjustments can be made quickly.
 
-## Projektstruktur (Übersicht)
+## Project structure (overview)
 peirce-continuum-poc/  
 ├─ README.md  
 ├─ requirements.txt  
@@ -51,16 +51,15 @@ peirce-continuum-poc/
 ├─ predictions.md  
 └─ OUTREACH.md
 
-## Lizenz
-Dieses Projekt steht unter der MIT‑Lizenz. Siehe LICENSE für Details.
+## License
+This project is released under the MIT License. See LICENSE for details.
 
-## Hinweise zur Nutzung
-Die hier präsentierten Rechnungen sind ein Proof of Concept. Die numerischen Ergebnisse sind modellabhängig und dienen als Ausgangspunkt für weitergehende, präzisere Rechnungen und experimentelle Tests. Reproduktionsskripte und Notebooks sind so gestaltet, dass sie schnell angepasst und erweitert werden können.
+## Usage notes
+The calculations presented here are a proof of concept. The numerical results are model dependent and serve as a starting point for more precise calculations and experimental tests. The reproduction scripts and notebooks are designed to be quickly adapted and extended.
 
-## Nächste sinnvolle Schritte
-- Systematische Einrechnung des Uehling‑Potentials für Z in [150, 210] mit feiner Auflösung.  
-- Implementierung eines einfachen Dirac‑Fock‑Screenings zur Abschätzung von Mehrteilchen‑Effekten.  
-- Kontaktaufnahme zu experimentellen Gruppen für kurze Datenchecks oder Testläufe.
+## Next sensible steps
+- Systematically include the Uehling potential for Z in [150, 210] with fine resolution.  
+- Implement a simple Dirac‑Fock screening to estimate many‑body effects.  
 
-## Mitmachen
-Issues und Pull Requests sind willkommen. Für Reproduktionsfragen bitte relevante Logausgaben und die verwendeten Parameter anhängen.
+## Contributing
+Issues and pull requests are welcome. For reproducibility questions, please attach relevant log output and the parameters used.
