@@ -18,18 +18,14 @@ This project demonstrates how a relational, topologically informed perspective o
 - predictions.md — Three falsifiable predictions with short measurement protocols
 - **Theory:** Operational RCSA axioms and proxy specification — see `docs/axioms.md`, `docs/proxy_spec.md`, and `docs/lemmas.md`. 
 
+## Theory and operational tests
 docs: add operational RCSA axioms, lemmas, proxy spec and convergence notebook skeleton
-Add operational RCSA theory layer and numerical validation skeleton:
-- docs/axioms.md: three operational axioms (statement, math, operational test, scope, limits)
-- docs/lemmas.md: Lemma A (numerical stability) and Lemma B (monotonicity) with sketches
-- docs/proxy_spec.md: precise definition of C(Z), default parameters, CSV format
-- notebooks/convergence.ipynb: notebook skeleton for convergence tests (r_max, cover, tolerances)
-- tests/smoke_test.py: CI smoke test (Z=1, Z=50)
+- **Theory:** Operational RCSA axioms and lemmas — see `docs/axioms.md` and `docs/lemmas.md`.  
+- **Proxy specification:** canonical definition of the cohomology proxy `C(Z)` and CSV format — see `docs/proxy_spec.md`.  
+- **Convergence tests:** notebook skeleton for numerical validation — `notebooks/convergence.ipynb`.
 
 Rationale: integrate axioms as testable hypotheses tied to the numerical proxy C(Z). 
 Merge only after CI smoke test passes and at least one convergence run is attached to the PR.
-
-
 
 ## Quick start (short)
 1. Clone the repository.  
