@@ -1,17 +1,31 @@
 # Peirce Continuum PoC — Relational Sheaf Algebra as an operational model for spectroscopy and overcriticality
 
 **Short pitch**  
-Peirce’s Continuum interprets measurement outcomes as local sections of relational sheaves. This PoC presents reproducible numerical examples for K‑shell binding energies in two nucleus models, provides three precise, falsifiable predictions, and supplies minimal code that allows experimental groups and numerical researchers to quickly check whether the proposed signatures appear in real data.
+Peirce’s “continuum” idea: continuity is about relations, not points. 
+
+It interprets measurement outcomes as local sections of relational sheaves. This PoC presents reproducible numerical examples for K‑shell binding energies in two nucleus models, provides three precise, falsifiable predictions, and supplies minimal code that allows experimental groups and numerical researchers to quickly check whether the proposed signatures appear in real data.
 
 ## Objective
 This project demonstrates how a relational, topologically informed perspective on spectroscopy and overcriticality can be computed and tested in practice. It documents initial numerical findings and provides reproducible tools to experimentally test the proposed signatures.
+
+- **Technical Note:** [Peirce Continuum PoC — Technical Note](https://github.com/gitfrid/peirce-kontinoum-sheaf-poC/blob/main/Peirce%20Continuum%20PoC%20Technical%20Note.MD)
 
 ## Repository contents
 - src/dirac_radial_solver.py — Minimal radial Dirac solver (1s, κ = −1) with two nucleus models: point‑regularized and homogeneous sphere  
 - notebooks/PoC.ipynb — Demo notebook for quick visualization of results  
 - data/ — Example CSV format for result data  
 - results/ — Example plots (E₁s vs Z)  
-- predictions.md — Three falsifiable predictions with short measurement protocols  
+- predictions.md — Three falsifiable predictions with short measurement protocols
+- **Theory:** Operational RCSA axioms and proxy specification — see `docs/axioms.md`, `docs/proxy_spec.md`, and `docs/lemmas.md`. 
+
+## Theory and operational tests
+docs: add operational RCSA axioms, lemmas, proxy spec and convergence notebook skeleton
+- **Theory:** Operational RCSA axioms and lemmas — see `docs/axioms.md` and `docs/lemmas.md`.  
+- **Proxy specification:** canonical definition of the cohomology proxy `C(Z)` and CSV format — see `docs/proxy_spec.md`.  
+- **Convergence tests:** notebook skeleton for numerical validation — `notebooks/convergence.ipynb`.
+
+Rationale: integrate axioms as testable hypotheses tied to the numerical proxy C(Z). 
+Merge only after CI smoke test passes and at least one convergence run is attached to the PR.
 
 ## Quick start (short)
 1. Clone the repository.  
