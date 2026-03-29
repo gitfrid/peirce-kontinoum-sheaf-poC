@@ -1,4 +1,4 @@
-\# Proxy specification: C(Z)
+# Proxy specification: C(Z)
 
 
 
