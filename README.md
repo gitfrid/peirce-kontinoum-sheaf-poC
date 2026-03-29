@@ -6,6 +6,8 @@ Peirce’s Continuum interprets measurement outcomes as local sections of relati
 ## Objective
 This project demonstrates how a relational, topologically informed perspective on spectroscopy and overcriticality can be computed and tested in practice. It documents initial numerical findings and provides reproducible tools to experimentally test the proposed signatures.
 
+- **Technical Note:** [Peirce Continuum PoC — Technical Note](https://github.com/gitfrid/peirce-kontinoum-sheaf-poC/blob/main/Peirce%20Continuum%20PoC%20Technical%20Note.MD)
+
 ## Repository contents
 - src/dirac_radial_solver.py — Minimal radial Dirac solver (1s, κ = −1) with two nucleus models: point‑regularized and homogeneous sphere  
 - notebooks/PoC.ipynb — Demo notebook for quick visualization of results  
